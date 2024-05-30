@@ -1,0 +1,64 @@
+ 
+    body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background: black url('images/jeremy-bishop-uAfZBP-GtiA-unsplash.jpg');
+        color: #fff;
+        font-family: 'Poppins' sans-serif;
+    }
+
+     a {
+        text-decoration: none;
+        color: #fff;
+        position: absolute;
+        top: 350px;
+        margin: 45px;   
+    }
+
+    footer {
+        position: absolute;
+        bottom: 15px;
+        margin: auto 90px;
+    }
+
+    .container {
+        display: inline-grid;
+        grid-template: 700px / 301px 301px 301px 301px;  
+    }
+
+    a:visited {
+        color: seagreen;
+    }
+    
+    .cod:first-child{
+        animation: bounce 2s cubic-bezier(0.165, 0.84, 0.44, 1) 10s none 6 alternate-reverse;
+        animation-play-state: pause;    
+    }
+
+    @keyframes bounce {
+        0%{
+        transform: scale(1); 
+        background: black; 
+        animation-duration: 2s;
+        }
+
+        25% {
+            transition: all 2s cubic-bezier(2.215, 0.610, 0.355, 1);
+            transform: scale(0.4);  
+            background-color: green;
+        }
+
+        50% {
+            transition: all 2s ease-in;
+            transform: scale(1);  
+            background: url('images/jeremy-bishop-uAfZBP-GtiA-unsplash.jpg');
+        }
+        100% {
+            transition: all 2s cubic-bezier(0.215, 0.610, 0.355, 1);
+            transform: scaleY(0.3);  
+            border-radius: 50%;
+            color: seagreen; 
+            opacity: 0.9;           
+        }
+    }
